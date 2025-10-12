@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Milad Modasir — Front‑End Developer</title>
+    <meta
+      name="description"
+      content="Front‑End Developer building fast, responsive web apps. Projects: Music App, Rick & Morty Favorites, Sweet Treat."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- NAV -->
+    <header class="site-header">
+      <div class="container nav">
+        <div class="brand">Milad</div>
+        <nav class="menu" id="menu">
+          <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="#about">About</a>
+          <a href="#experience">Experience</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <button class="burger" aria-label="Toggle menu" id="burger">☰</button>
+      </div>
+    </header>
+
+    <main class="container">
+      <!-- HERO -->
+      <section aria-label="Hero" class="hero" id="home">
+        <picture>
+          <!-- Replace this with your own hero image if you want -->
+          <img alt="Abstract city at night" src="assets/hero.jpg" />
+        </picture>
+        <div class="overlay" aria-hidden="true"></div>
+        <div class="content">
+          <div>
+            <h1>Milad Modasir</h1>
+            <p>
+              Front‑End Developer — I build fast, responsive web apps with clean
+              UI and real‑world functionality.
+            </p>
+            <div class="buttons">
+              <a class="btn primary" href="#projects">View Projects</a>
+              <a
+                class="btn ghost"
+                href="Milad_Modasir_CV.pdf"
+                target="_blank"
+                rel="noopener"
+                >Download Résumé</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
+      <section id="projects" aria-labelledby="projects-title">
+        <h2 class="section-title" id="projects-title">Projects</h2>
+        <p class="section-lead">
+          Three real apps that show how I think about UX, performance, and data.
+        </p>
+
+        <div class="grid cols-3">
+          <!-- Music App -->
+          <article class="card" aria-labelledby="pa1">
+            <img
+              src="assets/musicapp.jpg"
+              alt="Screenshot of Music App player UI"
+            />
+            <div class="card-body">
+              <h3 id="pa1">Music App — Modern Web Player</h3>
+              <ul class="features">
+                <li>Search with debouncing & keyboard navigation</li>
+                <li>Player bar with queue, play/pause, next/prev</li>
+                <li>Used by 30+ users for personal playlists</li>
+                <li>Offline likes & playlists (IndexedDB)</li>
+                <li>Responsive layout + accessible controls</li>
+              </ul>
+              <div class="tech">
+                <strong>Tech:</strong> HTML, CSS, JS (modules), IndexedDB, Fetch
+                API
+              </div>
+              <div class="actions">
+                <a
+                  class="btn link"
+                  href="https://miladmodasir.github.io/Musicapp"
+                  target="_blank"
+                  rel="noopener"
+                  >Live Demo</a
+                >
+                <a
+                  class="btn link"
+                  href="https://github.com/MiladModasir/Musicapp"
+                  target="_blank"
+                  rel="noopener"
+                  >GitHub</a
+                >
+              </div>
+            </div>
+          </article>
+
+          <!-- Rick & Morty -->
+          <article class="card" aria-labelledby="pa2">
+            <img
+              src="assets/rickandmorty.jpg"
+              alt="Screenshot of Rick & Morty character cards UI"
+            />
+            <div class="card-body">
+              <h3 id="pa2">Rick & Morty — API Catalog</h3>
+              <ul class="features">
+                <li>Favorites with persistence</li>
+                <li>Sort by name/status/species</li>
+                <li>Species summary & quick filters</li>
+                <li>Lazy‑loaded images, no layout shift</li>
+              </ul>
+              <div class="tech">
+                <strong>Tech:</strong> HTML, CSS, JS, LocalStorage, Rick & Morty
+                API
+              </div>
+              <div class="actions">
+                <a
+                  class="btn link"
+                  href="https://miladmodasir.github.io/rick-and-morty-favorites/"
+                  target="_blank"
+                  rel="noopener"
+                  >Live Demo</a
+                >
+                <a
+                  class="btn link"
+                  href="https://github.com/MiladModasir/rick-and-morty-favorites"
+                  target="_blank"
+                  rel="noopener"
+                  >GitHub</a
+                >
+              </div>
+            </div>
+          </article>
+
+          <!-- Sweet Treat -->
+          <article class="card" aria-labelledby="pa3">
+            <img
+              src="assets/sweettreat.jpg"
+              alt="Screenshot of Sweet Treat ice‑cream shop UI"
+            />
+            <div class="card-body">
+              <h3 id="pa3">Sweet Treat — Menu & Checkout</h3>
+              <ul class="features">
+                <li>Category cards + add‑to‑cart</li>
+                <li>Cart page with quantities & totals</li>
+                <li>Promo codes (e.g., 10% off)</li>
+                <li>Central LocalStorage cart module</li>
+              </ul>
+              <div class="tech">
+                <strong>Tech:</strong> HTML, CSS, JS (modules), LocalStorage
+              </div>
+              <div class="actions">
+                <a
+                  class="btn link"
+                  href="https://miladmodasir.github.io/Ice-cream-website/"
+                  target="_blank"
+                  rel="noopener"
+                  >Live Demo</a
+                >
+                <a
+                  class="btn link"
+                  href="https://github.com/MiladModasir/Ice-cream-website"
+                  target="_blank"
+                  rel="noopener"
+                  >GitHub</a
+                >
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- SKILLS -->
+      <section id="skills" aria-labelledby="skills-title">
+        <h2 class="section-title" id="skills-title">Skills</h2>
+        <div class="pillbox">
+          <span class="pill">JavaScript (ES6+)</span>
+          <span class="pill">TypeScript</span>
+          <span class="pill">SQL</span>
+          <span class="pill"> REST APIs,</span>
+          <span class="pill"> Vue.js</span>
+          <span class="pill"> Node.js</span>
+          <span class="pill">React</span>
+          <span class="pill">Next.js</span>
+          <span class="pill">HTML5</span>
+          <span class="pill">CSS3</span>
+          <span class="pill">Responsive Design</span>
+          <span class="pill">Accessibility (a11y)</span>
+          <span class="pill">Tailwind</span>
+          <span class="pill">Git/GitHub</span>
+          <span class="pill">REST / Fetch</span>
+          <span class="pill">LocalStorage</span>
+          <span class="pill">IndexedDB</span>
+          <span class="pill">Lighthouse</span>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section id="about" class="about" aria-labelledby="about-title">
+        <div>
+          <h2 class="section-title" id="about-title">About</h2>
+          <p class="section-lead">
+            I’m Milad, a front‑end developer who ships practical, user‑friendly
+            apps. I’m multilingual and come from a leadership background in
+            retail, which means I set clear goals, iterate fast, and focus on
+            measurable impact. I’m deepening React and core JavaScript while
+            building portfolio projects with clean UX.
+          </p>
+          <h3>Education</h3>
+          <ul>
+            <li>Web Development Bootcamp — Developers Web Academy (Online)</li>
+            <li>Product Management — General Assembly (Mar 2023)</li>
+            <li>Medical Science — Rostov State Medical University (2 years)</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- EXPERIENCE -->
+      <section id="experience" class="xp" aria-labelledby="xp-title">
+        <h2 class="section-title" id="xp-title">Experience</h2>
+
+        <div class="item">
+          <div class="meta">
+            <h4>Store Manager — 7‑Eleven, Aurora, CO</h4>
+            <div>Nov 2022 – Present</div>
+          </div>
+          <ul>
+            <li>
+              Trained and led <strong>15</strong> employees; improved store ops
+              and shift coverage.
+            </li>
+            <li>
+              Drove <strong>+25%</strong> sales growth in 2 months by tightening
+              merchandising & upsell scripts.
+            </li>
+            <li>
+              Resolved a <strong>$15,000</strong> cash discrepancy within 48
+              hours by auditing deposits & daily reports.
+            </li>
+          </ul>
+        </div>
+
+        <div class="item">
+          <div class="meta">
+            <h4>Sales Specialist Kabul - Afghanistan</h4>
+            <div>Auto & Retail</div>
+            <div>Jan - 2018 - Aug 2020</div>
+          </div>
+          <ul>
+            <li>
+              Sold 290 cars in 20 months, achieving 60% above target
+              consistently
+            </li>
+            <li>
+              Partnered with marketing team to launch offers, increasing
+              customer engagement and traffic.
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" aria-labelledby="contact-title">
+        <h2 class="section-title" id="contact-title">Contact</h2>
+        <p class="section-lead">
+          Let’s talk about front‑end roles or collaboration.
+        </p>
+        <p>
+          <strong>Email:</strong>
+          <a href="mailto:modasirmilad649@gmail.com"
+            >modasirmilad649@gmail.com</a
+          >
+          &nbsp;·&nbsp; <strong>LinkedIn:</strong>
+          <a
+            href="https://www.linkedin.com/in/milad-modasir/"
+            target="_blank"
+            rel="noopener"
+            >/in/milad-modasir</a
+          >
+          &nbsp;·&nbsp; <strong>GitHub:</strong>
+          <a
+            href="https://github.com/MiladModasir"
+            target="_blank"
+            rel="noopener"
+            >MiladModasir</a
+          >
+        </p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>© <span id="year"></span> Milad Modasir</div>
+        <div class="socials" aria-label="Social links">
+          <a
+            aria-label="GitHub"
+            href="https://github.com/MiladModasir"
+            target="_blank"
+            rel="noopener"
+            class="icon"
+            title="GitHub"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12 .5a12 12 0 0 0-3.79 23.4c.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.55-1.38-1.34-1.75-1.34-1.75-1.09-.74.08-.72.08-.72 1.2.08 1.84 1.24 1.84 1.24 1.07 1.84 2.82 1.31 3.5 1 .11-.78.42-1.31.76-1.61-2.67-.3-5.47-1.34-5.47-5.96 0-1.32.47-2.41 1.24-3.26-.12-.3-.54-1.52.12-3.17 0 0 1.01-.32 3.3 1.24a11.5 11.5 0 0 1 6 0c2.28-1.56 3.29-1.24 3.29-1.24.66 1.65.24 2.87.12 3.17.77.85 1.24 1.94 1.24 3.26 0 4.63-2.81 5.66-5.49 5.95.43.37.81 1.1.81 2.22v3.29c0 .32.21.69.82.57A12 12 0 0 0 12 .5Z"
+              />
+            </svg>
+          </a>
+          <a
+            aria-label="LinkedIn"
+            href="https://www.linkedin.com/in/milad-modasir/"
+            target="_blank"
+            rel="noopener"
+            class="icon"
+            title="LinkedIn"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M19 0H5C2.24 0 0 2.24 0 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5V5c0-2.76-2.24-5-5-5zM8.34 18.67H5.67V9.33h2.67v9.34zM7 8.13c-.85 0-1.54-.69-1.54-1.54 0-.85.69-1.54 1.54-1.54s1.54.69 1.54 1.54c0 .85-.69 1.54-1.54 1.54zM20 18.67h-2.67v-4.53c0-1.08-.02-2.46-1.5-2.46-1.5 0-1.73 1.17-1.73 2.38v4.61h-2.67V9.33h2.56v1.28h.04c.36-.68 1.24-1.4 2.56-1.4 2.74 0 3.25 1.8 3.25 4.14v5.31z"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
