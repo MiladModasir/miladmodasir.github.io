@@ -4,7 +4,7 @@ A fast, developer-focused portfolio built with **vanilla HTML/CSS/JS** and deplo
 Showcases three real projects: **Music App**, **Rick & Morty Favorites**, and **Sweet Treat**.
 
 **Live site:** https://miladmodasir.github.io  
-**Resume (PDF):** `Milad_Modasir_CV.pdf` (link is in the hero button)
+**Resume (PDF):** `MiladM.pdf` (link is in the hero button)
 
 ---
 
